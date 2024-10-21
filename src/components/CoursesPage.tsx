@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import React  from "react";
 
-const StyledA =styled.a`
-    color: #2b7a78;
-`;
 const StyledH3 =styled.h3`
     color:#17252a;
 `;

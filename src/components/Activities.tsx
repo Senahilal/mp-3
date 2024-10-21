@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import React  from "react";
 import volleyball from '../assets/volleyball.jpg';
 import p2 from '../assets/p2.jpg';
 import art from '../assets/art.jpg';

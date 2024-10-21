@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React  from "react";
 
 const StyledFooter =styled.footer`
     background-color:black;
