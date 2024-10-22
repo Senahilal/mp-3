@@ -34,6 +34,7 @@ export default function ExperiencePage() {
         //Checking if numbers are valid
         if (isNaN(first) || isNaN(second)) {
             alert("Please enter valid numbers");
+            setResult("Invalid number(s)");
             return;
         }
     
@@ -88,7 +89,7 @@ export default function ExperiencePage() {
             <StyledButton onClick={() => handleCalculation("**")}>**</StyledButton>
             <StyledButton onClick={() => {setNum1(""); setNum2(""); setResult("");}}>Clear</StyledButton>
         </div>
-        <p id="output">{result}</p>
+        <p id="output" style={{color: result[0] === "-" ? "red" : "white"}}>{result}</p>
     </>
     );
 }
