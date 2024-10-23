@@ -55,7 +55,7 @@ export default function ExperiencePage() {
                 if (second === 0) {
                     // Sets the warning message as result and returns
                     setResult("Zero cannot be the denominator");
-                    
+                    return;
                 }else{
                     calculationResult = first / second;
                 }
