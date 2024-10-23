@@ -50,6 +50,7 @@ const StyledLi = styled.li`
     } 
 `;
 
+// Styled component for the Link
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
     return (
     <Link style={{textDecoration: "none",color: "#def2f1",fontWeight: "bold"

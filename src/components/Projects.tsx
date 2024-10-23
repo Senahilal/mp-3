@@ -53,8 +53,9 @@ export default function ExperiencePage() {
                 break;
             case "/":
                 if (second === 0) {
+                    // Sets the warning message as result and returns
                     setResult("Zero cannot be the denominator");
-                    return;
+                    
                 }else{
                     calculationResult = first / second;
                 }
@@ -68,6 +69,7 @@ export default function ExperiencePage() {
                 calculationResult = "Invalid operation";
         }
 
+        //Converting calculationResult to string and setting result
         let result = String(calculationResult);
         setResult(result);
     };
@@ -90,6 +92,9 @@ export default function ExperiencePage() {
             <StyledButton onClick={() => handleCalculation("**")}>**</StyledButton>
             <StyledButton onClick={() => {setNum1(""); setNum2(""); setResult("");}}>Clear</StyledButton>
         </div>
+
+        {/* If the string starts with '-' then the result is negative number */}
+        {/*Show negative numbers in red color*/}
         <p id="output" style={{color: result[0] === "-" ? "red" : "white"}}>{result}</p>
     </>
     );
