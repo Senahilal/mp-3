@@ -54,6 +54,7 @@ export default function ExperiencePage() {
             case "/":
                 if (second === 0) {
                     setResult("Zero cannot be the denominator");
+                    return;
                 }else{
                     calculationResult = first / second;
                 }
